@@ -20,11 +20,11 @@ function App() {
 
   
   const TouchdownB = ()=>{
-    setScoreA(scoreH + 7)
+    setScoreA(scoreA + 7)
   }
 
   const FieldGoalB = ()=>{
-    setScoreA(scoreH + 3)
+    setScoreA(scoreA + 3)
   }
 
   return (
@@ -53,8 +53,8 @@ function App() {
           <button className="homeButtons__fieldGoal" onClick={FieldGoal}>Home Field Goal</button>
         </div>
         <div className="awayButtons">
-          <button className="awayButtons__touchdown">Away Touchdown</button>
-          <button className="awayButtons__fieldGoal">Away Field Goal</button>
+          <button className="awayButtons__touchdown" onClick={TouchdownB}>Away Touchdown</button>
+          <button className="awayButtons__fieldGoal" onClick={FieldGoalB}>Away Field Goal</button>
         </div>
       </section>
     </div>
